@@ -2,7 +2,7 @@ from io import open
 
 from setuptools import find_packages, setup
 
-version = "0.0.1"
+version = "0.0.2"
 
 readme_file = "README.md"
 
@@ -36,7 +36,7 @@ setup(
     ],
     install_requires=REQUIRES,
     tests_require=["coverage", "pytest"],
-    entry_points={"console_scripts": ["hgit=hgit:cli"]},
+    entry_points={"console_scripts": ["hgit=hgit"]},
     py_modules=["hgit"],
     packages=find_packages(),
 )
